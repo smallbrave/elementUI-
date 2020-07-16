@@ -44,7 +44,8 @@ import {
     CheckboxGroup,
     Upload,
     Timeline,
-    TimelineItem
+    TimelineItem,
+    Backtop
 } from 'element-ui'
 
 Vue.use(Button)
@@ -123,6 +124,7 @@ Vue.use(CheckboxGroup)
 Vue.use(Upload)
 Vue.use(Timeline)
 Vue.use(TimelineItem)
+Vue.use(Backtop)
 
 
 //引入一个table-with-tree-grid组件

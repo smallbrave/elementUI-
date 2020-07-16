@@ -1,5 +1,9 @@
 <template>
   <el-container class="home_container">
+      <!-- 对于返回顶部这个东西，要放在最外层div中 -->
+        <el-backtop :bottom="60">
+            <div class="top">TOP</div>
+        </el-backtop>
             <!-- -------------------------------头部区域------------------------------------- -->
       <el-header>
             <div class="header_content">
@@ -38,7 +42,7 @@
           </el-aside>
                     <!-- -------------------------------主要内容------------------------------------- -->
           <el-main>
-              <router-view></router-view>
+               <router-view></router-view>
           </el-main>
       </el-container>
   </el-container>    
@@ -95,6 +99,12 @@ export default {
 <style lang="less" scoped>
 .home_container {
     height: 100%;
+}
+
+.el-backtop {
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
 }
 
 .el-header {
